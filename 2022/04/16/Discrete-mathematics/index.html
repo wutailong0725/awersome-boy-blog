@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Discrete mathematics | TL_SPACE :)</title><meta name="keywords" content="Math"><meta name="author" content="Tailong Wu"><meta name="copyright" content="Tailong Wu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Discrete mathematics主要内容：  数理逻辑 集合论 图论 代数系统 组合数学  第一章：准备知识集合基数：实际上就是有个几个不同的元素，代表几元。$ |A|$ 幂集：一个集合的所有子集构成的集合就是其幂集 。$P(A) 或者 2^A$  。 如果该集合为n元则其幂集元素共有2的n次方个。 对称差：$A \oplus B &#x3D; (A-B) \cup (B-A) $    A和B除去">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Discrete mathematics">
+<meta property="og:url" content="https://www.wutailong.xyz/2022/04/16/Discrete-mathematics/index.html">
+<meta property="og:site_name" content="TL_SPACE :)">
+<meta property="og:description" content="Discrete mathematics主要内容：  数理逻辑 集合论 图论 代数系统 组合数学  第一章：准备知识集合基数：实际上就是有个几个不同的元素，代表几元。$ |A|$ 幂集：一个集合的所有子集构成的集合就是其幂集 。$P(A) 或者 2^A$  。 如果该集合为n元则其幂集元素共有2的n次方个。 对称差：$A \oplus B &#x3D; (A-B) \cup (B-A) $    A和B除去">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.dogimg.com/2022/04/16/625a30a02a8f3.jpg">
+<meta property="article:published_time" content="2022-04-16T02:49:32.000Z">
+<meta property="article:modified_time" content="2022-04-16T03:19:43.637Z">
+<meta property="article:author" content="Tailong Wu">
+<meta property="article:tag" content="Math">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.dogimg.com/2022/04/16/625a30a02a8f3.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.wutailong.xyz/2022/04/16/Discrete-mathematics/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Discrete mathematics',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-16 11:19:43'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/wtl.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.dogimg.com/2022/04/16/625a30a02a8f3.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">TL_SPACE :)</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Discrete mathematics</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-16T02:49:32.000Z" title="Created 2022-04-16 10:49:32">2022-04-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-16T03:19:43.637Z" title="Updated 2022-04-16 11:19:43">2022-04-16</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Discrete mathematics"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Discrete-mathematics"><a href="#Discrete-mathematics" class="headerlink" title="Discrete mathematics"></a>Discrete mathematics</h1><p>主要内容：</p>
+<ul>
+<li>数理逻辑</li>
+<li>集合论</li>
+<li>图论</li>
+<li>代数系统</li>
+<li>组合数学</li>
+</ul>
+<h2 id="第一章：准备知识"><a href="#第一章：准备知识" class="headerlink" title="第一章：准备知识"></a>第一章：准备知识</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p><strong>基数：</strong>实际上就是有个几个不同的元素，代表几元。$ |A|$</p>
+<p><strong>幂集：</strong>一个集合的所有子集构成的集合就是其幂集 。$P(A) 或者 2^A$  。 如果该集合为n元则其幂集元素共有2的n次方个。</p>
+<p><strong>对称差</strong>：$A \oplus B = (A-B) \cup (B-A) $    A和B除去交集的区域。</p>
+<h3 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h3><p><strong>整除</strong>：$a|b , b = qa+r$ . q为商（Quotient）,r称为余数（Remainder）</p>
+<p><strong>推论1</strong>： $ a|b ,a|c =&gt; a|(mb+nc)$</p>
+<p><strong>素数（质数）</strong>：只能被自身和1整除的正整数（不包括1），反面称为合数。</p>
+<p><strong>定理1.3</strong> ： 素因子分解：每个大于1的整数n，能够被分解成唯一的素因子序列。</p>
+<p><strong>定理1.4</strong>：每个合数必有一个小于或等于$ \sqrt{n}$ 的素因子</p>
+<p><strong>是否是素数的有效算法：</strong></p>
+<p><strong>gcd</strong>：Greatest Common Divisor 最大公约数。</p>
+<p><strong>互素</strong>：两个整数最大公约数为1时，称两数之间互素</p>
+<p><strong>两两互素</strong>：一列整数互相直接都是互素的，每两个直接的gcd都是1。</p>
+<p><strong>gcd的素因子分解求法</strong>：两个分解为两个素因子序列，将素因子的指数设定为两者相同素因子的指数中较小的一个，之后相乘。</p>
+<p><strong>定理1.5</strong>：如果a,b 和d时任意的正整数，d = gcd(a,b) ,则</p>
+<ul>
+<li>存在整数s,t ,使得d = sa+tb</li>
+<li>如果c是a 和b 的公因子，则c|d</li>
+</ul>
+<p><strong>证明思路：</strong></p>
+<p>令c是a和b的公因子;</p>
+<p>$c|a,c|b \rightarrow c|x 且c&lt;=x$</p>
+<p>a = qx+r  反表示r</p>
+<p>之后x用sa+tb表示</p>
+<p>整理式子，让r为a,b各自某一个倍数之后的和。</p>
+<p>与x是a，b的某一个倍数和最小的正整数的事实矛盾。推出r一定是0，x|a。同样的方式证明x|b。</p>
+<p><strong>lcm</strong>：Lowest Common Multiple 最小公倍数</p>
+<p><strong>定理1.6</strong>：$gcd(a,b)<em>lcm(a,b) = a</em>b$</p>
+<p><strong>欧几里得算法求gcd（辗转相除法）</strong>：</p>
+<ul>
+<li>A &gt; B</li>
+<li>R = A%B<ul>
+<li>if R == 0 : B is gcd(A,B)</li>
+<li>if R! = 0: A = B,B = R</li>
+</ul>
+</li>
+<li>Execute again R = A%B</li>
+</ul>
+<p><strong>模运算</strong>：</p>
+<p>只关心余数</p>
+<p>a,b模m同余 ：$ a≡b (mod m) \leftrightarrow a = b+km $   </p>
+<h3 id="序列和递推关系"><a href="#序列和递推关系" class="headerlink" title="序列和递推关系"></a>序列和递推关系</h3><p><strong>序列</strong>：按某种顺序排列的一张表，有限个数为有限序列，无限个数则是无限序列。{a~n~}</p>
+<p><strong>等比序列</strong>： $ a_n = a_1 * q^{n-1}$</p>
+<p><strong>正负1交替序列</strong>： $ a_n = (-1)^{n+1}$</p>
+<p><strong>一般交替序列</strong>： $ a_n = \frac{a+b}{2}+(-1)^n\frac{b-a}{2}$</p>
+<p><strong>序列求和</strong>：$\sum\limits^{n}_{i=1}{a_i}$</p>
+<p><strong>序列求积</strong>：$\prod\limits_{i=1}^{n}{a_i}$</p>
+<p><strong>求和公式</strong>：</p>
+<ul>
+<li>$\sum i = \frac{n(n+1)}{2}$</li>
+<li>$\sum i^2 = \frac{n(n+1)(2n+1)}{6}$</li>
+<li>$\sum i^3 = \frac{n^2(n+1)^2}{4}$</li>
+</ul>
+<p><strong>递推关系</strong>：一个表达序列中前后两项关系的等式</p>
+<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p><strong>布尔矩阵</strong>：所有元素都是0或者1的矩阵</p>
+<ul>
+<li>并：$ \vee$ 表示每个布尔值之间取 或，为什么并是或，因为或实际上放松了条件，增加了覆盖的面积</li>
+<li>交：$\land$ 表示每个布尔值之间取 和。和让条件更加严格，减小了面积。</li>
+<li><strong>布尔积</strong>：就是矩阵乘法，但是将加法用$\vee,or$ 来代替，乘法用$\land ,and$ 来代替</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Tailong Wu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://www.wutailong.xyz/2022/04/16/Discrete-mathematics/">https://www.wutailong.xyz/2022/04/16/Discrete-mathematics/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Math/">Math</a></div><div class="post_share"><div class="social-share" data-image="https://pic.dogimg.com/2022/04/16/625a30a02a8f3.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/04/12/Data-structures-and-algorithms/"><img class="next-cover" src="https://pic.dogimg.com/2022/04/12/6254f0ee33ead.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Data structures and algorithms</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/04/10/Notes-on-linear-algebra/" title="Note on Linear Algebra"><img class="cover" src="/img/sky_plant.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-10</div><div class="title">Note on Linear Algebra</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/wtl.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tailong Wu</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/wutailong0725"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wutailong0725" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Have nice day , my friend!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Discrete-mathematics"><span class="toc-number">1.</span> <span class="toc-text">Discrete mathematics</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%87%86%E5%A4%87%E7%9F%A5%E8%AF%86"><span class="toc-number">1.1.</span> <span class="toc-text">第一章：准备知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E5%90%88"><span class="toc-number">1.1.1.</span> <span class="toc-text">集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0"><span class="toc-number">1.1.2.</span> <span class="toc-text">整数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E5%92%8C%E9%80%92%E6%8E%A8%E5%85%B3%E7%B3%BB"><span class="toc-number">1.1.3.</span> <span class="toc-text">序列和递推关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5"><span class="toc-number">1.1.4.</span> <span class="toc-text">矩阵</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/16/Discrete-mathematics/" title="Discrete mathematics"><img src="https://pic.dogimg.com/2022/04/16/625a30a02a8f3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Discrete mathematics"/></a><div class="content"><a class="title" href="/2022/04/16/Discrete-mathematics/" title="Discrete mathematics">Discrete mathematics</a><time datetime="2022-04-16T02:49:32.000Z" title="Created 2022-04-16 10:49:32">2022-04-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/12/Data-structures-and-algorithms/" title="Data structures and algorithms"><img src="https://pic.dogimg.com/2022/04/12/6254f0ee33ead.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Data structures and algorithms"/></a><div class="content"><a class="title" href="/2022/04/12/Data-structures-and-algorithms/" title="Data structures and algorithms">Data structures and algorithms</a><time datetime="2022-04-12T03:14:56.000Z" title="Created 2022-04-12 11:14:56">2022-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/10/Notes-on-linear-algebra/" title="Note on Linear Algebra"><img src="/img/sky_plant.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Note on Linear Algebra"/></a><div class="content"><a class="title" href="/2022/04/10/Notes-on-linear-algebra/" title="Note on Linear Algebra">Note on Linear Algebra</a><time datetime="2022-04-10T05:41:51.000Z" title="Created 2022-04-10 13:41:51">2022-04-10</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2022/04/10/hello-world/" title="Hello World">Hello World</a><time datetime="2022-04-10T03:15:54.271Z" title="Created 2022-04-10 11:15:54">2022-04-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Tailong Wu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
